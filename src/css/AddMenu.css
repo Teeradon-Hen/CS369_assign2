@@ -1,0 +1,22 @@
+.AddMenu{
+     margin: 30px 100px;
+   }
+   input[type="text"],input[type="number"] {
+     padding:10px ;
+     width: 500px;
+     
+   }
+   select , option{
+     padding:10px ;
+     width: 200px;
+     margin: 10px;
+   }
+   input{
+     margin: 5px;
+   }
+   button{
+     padding:10px ;
+     width: 200px;
+     margin: 10px;
+   }
+   

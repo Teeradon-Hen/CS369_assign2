@@ -7,9 +7,9 @@ export default function Product() {
                <h3>wfasdasdsadasdad</h3>
                <nav className='tab'>
                     <ul>
-                         <li><Link to="/product">ALL</Link></li>
-                         <li><Link to="/product/kid">Kid</Link></li>
-                         <li><Link to="/product/men">Men</Link></li>
+                         <li><Link to={`menu`}>ALL</Link></li>
+                         <li><Link to={`kid`}>Kid</Link></li>
+                         <li><Link to={`men`}>Men</Link></li>
 
                          {/* <button className="tabLinks" ><Link to="/product/men">Men</Link></button> */}
                     </ul>

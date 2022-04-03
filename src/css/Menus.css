@@ -1,0 +1,36 @@
+.card {
+     border: 1px solid #DE5499;
+     box-sizing: border-box;
+     border-radius: 10px;
+     width: 227px;
+     height: 200px;
+     margin-right: 30px;
+     margin-bottom: 30px;
+     display: inline-block;
+     color:#DE5499;
+     padding-left: 25px;
+     padding-right: 20px;
+   }
+   
+   .flex1 {
+     flex: 1;
+   }
+   
+   .flex4{
+     flex: 4;
+   }
+   
+   .righttext {
+     direction: rtl;
+   }
+   
+   .cardprice {
+     position: absolute;
+     text-align: right;
+     padding-top: 115px;
+     padding-left: 145px;
+     font-size: 25px;
+   }
+   .Menu{
+    margin: 50px 100px;
+  }

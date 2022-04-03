@@ -1,8 +1,12 @@
-import menu from './menu.json';
+import Menu from './menu.json';
 import './App.css';
-import Menu from './Menu';
-import MenuList from './MenuList';
-import AddMenu from './AddMenu';
+import logo from './Frame_2.png'
+import Home from './Component/Home';
+import Menus from './Component/Menus';
+import AddMenu from './Component/AddMenu';
+import MenuDetail from './Component/MenuDetail';
+
+
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 const float = {
@@ -10,37 +14,50 @@ const float = {
 
 }
 function App() {
-  const [data, setData] = useState([])
+  const [menus, setMenu] = useState([])
 
   useEffect(() => {
-    setData(menu)
-  }, [])
+    setMenu(Menu)
 
-  const onAddMenu = (newData) => {
-    setData(oldData => [...oldData, newData]);
+  }, [])
+  console.log(menus)
+
+  const onAddMenu = (newMenu) => {
+    setMenu(oldMenu => [...oldMenu, newMenu]);
+    console.log(menus)
   }
 
+  const onDelete = (id, event) => {
+    console.log("on Delete")
+    console.log(id);
+    let menu = menus.filter(e=> {
+        return e.food_id !== id;
+    })
+    setMenu(menu);
+    event.stopPropagation();
+    event.preventDefault();
+}
 
   return (
     <div >
       <BrowserRouter>
 
         <header>
+          <img src={logo} />
           <ul className='nav-bar'>
             <li><Link to="/">หน้าหลัก</Link></li>
-            <li><Link to="/menu">รายการอาหาร</Link></li>
+            <li><Link to="/menus">รายการอาหาร</Link></li>
             <li><Link to="/add-menu">เพิ่มรายการอาหาร</Link></li>
-
-
-            {/*<li style={float}><a class="active" href="#about">About</a></li> */}
-
           </ul>
+
+
           <Routes>
-            <Route path='/' element={<h3>Home</h3>} />
-            <Route path='/add-menu' element={<AddMenu onAddMenu={onAddMenu} newId={data.length} />} />
-            <Route path='/menu' element={<><Menu /><MenuList category='ALL' data={data} /></>} />
-            <Route path='/menu/kid'  element={<><Menu /><MenuList category='Kid' data={data} /></>} />
-            <Route path='/menu/men'  element={<><Menu /><MenuList category='Men' data={data} /></>} />
+            <Route path='/' element={<Home />} />
+   
+              <Route path='menus' element={<Menus menus={menus} onDelete={onDelete}/>} />
+              <Route path='menus/:id' element={<MenuDetail/>}/>
+           
+            <Route path='add-menu' element={<AddMenu onAddMenu={onAddMenu} newId={menus.length+1} />} />
           </Routes>
         </header>
       </BrowserRouter>
