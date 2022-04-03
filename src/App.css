@@ -1,38 +1,91 @@
-.App {
+/*==========Header==========*/
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(219, 215, 215);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(22, 21, 21);
   text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li a:hover:not(.active) {
+  background-color: rgb(187, 183, 183);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.active {
+  background-color: #939796;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*==========Tab==========*/
+
+.tab{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.tab ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+.tab ul li a{
+  display: block;
+  color: rgb(22, 21, 21);
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+.tab ul li a:hover{
+  background-color: rgb(224, 220, 220);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*==========Menu==========*/
+.Menu{
+  margin: 30px 100px;
+}
+
+
+/*==========MenuList==========*/
+.MenuList{
+  margin: 30px 100px;
+}
+
+/*==========AddMenu==========*/
+.AddMenu{
+  margin: 30px 100px;
+}
+input[type="text"],input[type="number"] {
+  padding:10px ;
+  width: 500px;
+  
+}
+select , option{
+  padding:10px ;
+  width: 200px;
+  margin: 10px;
+}
+input{
+  margin: 5px;
+}
+button{
+  padding:10px ;
+  width: 200px;
+  margin: 10px;
 }

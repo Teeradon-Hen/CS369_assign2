@@ -1,13 +1,40 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: FC Minimal Bold
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "FC Minimal Bold";
+  src: local("FC Minimal Bold"),
+    url("./fonts/FC Minimal Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "FC Minimal Bold Italic";
+  src: local("FC Minimal Italic"),
+    url("./fonts/FC Minimal Bold Italic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "FC Minimal Italic";
+  src: local("FC Minimal Bold"),
+    url("./fonts/FC Minimal Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: "FC Minimal Regular";
+  src: local("FC Minimal Regular"),
+    url("./fonts/FC Minimal Regular.ttf") format("truetype");
+}
+

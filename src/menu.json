@@ -1,0 +1,74 @@
+[
+     {
+          "food_id": 1,
+          "food_name": "สเต๊กหมูพริกไทดำ",
+          "food_price": 79,
+          "food_detail": null,
+          "food_category": "สเต๊ก",
+          "food_note": 1
+     },
+     {
+          "food_id": 2,
+          "food_name": "สเต๊กไก่พริกไทดำ",
+          "food_price": 69,
+          "food_detail": null,
+          "food_category": "สเต๊ก",
+          "food_note": 1
+     },
+     {
+          "food_id": 3,
+          "food_name": "สเต๊กปลาแซลมอน",
+          "food_price": 159,
+          "food_detail": null,
+          "food_category": "สเต๊ก",
+          "food_note": 2
+     },
+     {
+          "food_id": 4,
+          "food_name": "เฟรนช์ฟรายส์",
+          "food_price": 59,
+          "food_detail": null,
+          "food_category": "ของทานเล่น",
+          "food_note": 0
+     },
+     {
+          "food_id": 5,
+          "food_name": "มันบด",
+          "food_price": 59,
+          "food_detail": null,
+          "food_category": "ของทานเล่น",
+          "food_note": 1
+     },
+     {
+          "food_id": 6,
+          "food_name": "นักเกต",
+          "food_price": 39,
+          "food_detail": "นักเกต 6 ชิ้น",
+          "food_category": "ของทานเล่น",
+          "food_note": 0
+     },
+     {
+          "food_id": 7,
+          "food_name": "เฟรนช์ฟรายส์ราดชีส",
+          "food_price": 69,
+          "food_detail": null,
+          "food_category": "ของทานเล่น",
+          "food_note": 0
+     },
+     {
+          "food_id": 8,
+          "food_name": "น้ำเปล่า",
+          "food_price": 15,
+          "food_detail": "น้ำเปล่าขนาด 500 มล.",
+          "food_category": "เครื่องดื่ม",
+          "food_note": 0
+     },
+     {
+          "food_id": 9,
+          "food_name": "น้ำแข็งเปล่า",
+          "food_price": 2,
+          "food_detail": null,
+          "food_category": "เครื่องดื่ม",
+          "food_note": 0
+     }
+]
