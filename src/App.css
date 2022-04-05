@@ -2,6 +2,7 @@
 @import './css/Menus.css';
 @import './css/NavBar.css';
 @import './css/AddMenu.css';
+@import './css/MenuDetail.css';
 
 /*==========Home==========*/
 .Home{
@@ -14,4 +15,10 @@ header img{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  width: auto;
+  height: 105px;
 }
+
+
