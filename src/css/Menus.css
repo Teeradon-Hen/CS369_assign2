@@ -1,5 +1,5 @@
 .card {
-     border: 1px solid #DE5499;
+     border: none;
      box-sizing: border-box;
      border-radius: 10px;
      width: 227px;
@@ -10,7 +10,18 @@
      color:#DE5499;
      padding-left: 25px;
      padding-right: 20px;
+     box-shadow: 0px 10px 20px rgba(222, 84, 153, 0.3);
+     transition: all 0.3s ease 0s;
+     cursor: pointer;
+     outline: none;
    }
+
+   .card:hover {
+    background-color: #DE5499;
+    box-shadow: 0px 15px 20px rgba(222, 84, 153, 0.5);
+    color: #f2ebe9;
+    transform: translateY(-7px);
+  }
    
    .flex1 {
      flex: 1;
