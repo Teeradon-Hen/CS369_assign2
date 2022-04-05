@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: FC Minimal Regular;
+  background-color: #F2EBE9;
+  color: #DE5499;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "FC Minimal Bold";
+  src: local("FC Minimal Bold"),
+    url("./fonts/FC Minimal Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "FC Minimal Bold Italic";
+  src: local("FC Minimal Italic"),
+    url("./fonts/FC Minimal Bold Italic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "FC Minimal Italic";
+  src: local("FC Minimal Bold"),
+    url("./fonts/FC Minimal Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: "FC Minimal Regular";
+  src: local("FC Minimal Regular"),
+    url("./fonts/FC Minimal Regular.ttf") format("truetype");
+}
+
