@@ -2,8 +2,9 @@
      list-style-type: none;
      margin: 0;
      padding: 0;
+     padding-left: 50px;
      overflow: hidden;
-     background-color: rgb(219, 215, 215);
+     background-color: #EDDCD9;
    }
    
    li {
@@ -12,19 +13,19 @@
    
    li a {
      display: block;
-     color: rgb(22, 21, 21);
+     color: #264143;
      text-align: center;
-     padding: 20px 16px;
+     padding: 30px 40px;
      text-decoration: none;
      font-weight: bold;
-     font-size: 20px;
+     font-size: 30px;
    }
    
    li a:hover:not(.active) {
-     background-color: rgb(187, 183, 183);
+     background-color: #F2EBE9;
    }
    
    .active {
-     background-color: #939796;
+     background-color: #F2EBE9;
    }
    
