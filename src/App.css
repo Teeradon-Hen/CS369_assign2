@@ -1,17 +1,12 @@
 @import './css/Home.css';
 @import './css/Menus.css';
-@import './css/NavBar.css';
+@import './css/Header.css';
 @import './css/AddMenu.css';
+@import './css/MenuDetail.css';
 
 /*==========Home==========*/
-.Home{
+.Home {
   margin: 30px 100px;
 }
 
 /*=======================*/
-
-header img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}

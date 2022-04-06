@@ -1,22 +1,69 @@
-.AddMenu{
-     margin: 30px 100px;
-   }
-   input[type="text"],input[type="number"] {
-     padding:10px ;
-     width: 500px;
-     
-   }
-   select , option{
-     padding:10px ;
-     width: 200px;
-     margin: 10px;
-   }
-   input{
-     margin: 5px;
-   }
-   button{
-     padding:10px ;
-     width: 200px;
-     margin: 10px;
-   }
-   
+.AddMenu {
+  margin: 30px 100px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  width: 500px;
+  border: 1px solid #DE5499;
+  background-color: #F2EBE9;
+  color: #DE5499;
+  border-radius: 10px;
+  font-family: FC Minimal Regular;
+  font-size: 20px;
+}
+
+select,
+option {
+  padding: 10px;
+  width: 200px;
+  margin: 10px 0px 20px 0px;
+  border: 1px solid #DE5499;
+  background-color: #F2EBE9;
+  color: #DE5499;
+  border-radius: 10px;
+  font-family: FC Minimal Regular;
+  font-size: 20px;
+}
+
+/*
+  #food_category option:checked{
+    background-color: red;
+    color: white;
+  }*/
+
+input {
+  /*top right bottom left*/
+  margin: 10px 0px 20px 0px;
+}
+
+button {
+  padding: 10px;
+  width: 300px;
+  margin: 50px;
+  margin-left: 100px;
+  background-color: #DE5499;
+  color: #F2EBE9;
+  box-shadow: 0px 8px 15px rgba(183, 30, 107, 0.5);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-family: FC Minimal Regular;
+  font-size: 25px;
+}
+
+button:hover {
+  background-color: rgb(234, 105, 172);
+}
+
+::placeholder {
+  color: rgba(222, 84, 153, 0.5);
+}
+
+input[type=text]:focus,
+input[type=number]:focus,
+select:focus {
+  border: 1px solid #E99F4C;
+  outline: none;
+}
